@@ -7,12 +7,12 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # Load dataset
-file_path = 'DATA1FUCKME.xlsx'
+file_path = 'Your data set'
 dataset = pd.read_excel(file_path)
 
 # Select Features and Target
-features = dataset[['SPECIFIC CONDUCTANCE', 'PH', 'TDS', 'TURBIDITY']]
-target = dataset['IRON TOTAL']
+features = dataset[['Parameters', '-', '-', '-']]
+target = dataset['Target Variable']
 
 # Assign to X and y
 X, y = features, target
